@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>In-Store Navigation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>In-Store Navigation</h1>
+  </header>
+
+  <main class="container">
+    <section class="left">
+      <div class="controls">
+        <button id="refreshBtn">Refresh Items</button>
+        <div id="loginBox">
+          <h3>Admin Login</h3>
+          <input id="username" placeholder="username" />
+          <input id="password" type="password" placeholder="password" />
+          <button id="loginBtn">Login</button>
+          <div id="loginMsg" class="small"></div>
+        </div>
+
+        <div id="addItemBox" class="hidden">
+          <h3>Add Item (Admin)</h3>
+          <input id="itemName" placeholder="Name" />
+          <input id="itemPrice" placeholder="Price" />
+          <input id="itemFloor" placeholder="Floor" />
+          <input id="itemX" placeholder="X (0..9)" />
+          <input id="itemY" placeholder="Y (0..9)" />
+          <button id="addItemBtn">Add Item</button>
+          <div id="addMsg" class="small"></div>
+        </div>
+      </div>
+
+      <div class="items">
+        <h2>Items</h2>
+        <ul id="itemsList"></ul>
+      </div>
+    </section>
+
+    <section class="right">
+      <h2>Map (Grid)</h2>
+      <div id="map"></div>
+      <div class="path-controls">
+        <p>Select start and end by clicking cells.</p>
+        <button id="clearBtn">Clear Selection</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
