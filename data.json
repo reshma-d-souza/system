@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "id": 1, "name": "Rice", "price": 50, "floor": 1, "location": { "x": 2, "y": 4 } },
+    { "id": 2, "name": "Sugar", "price": 40, "floor": 1, "location": { "x": 6, "y": 1 } }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "passwordHash": "$2b$10$A0Jq8AkbN3Jp7oBkHhVL8uFw0Txfy7C0u6aBP2igNGt25YwKCVT1."
+    }
+  ]
+}
